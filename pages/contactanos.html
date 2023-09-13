@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definicion de archivos de styles-->
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <!-- Definicion de fonts-->
+    <!-- Jura -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <!-- Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Título de la página-->
+    <title>Contactanos</title>
+</head>
+
+<body class="fondocontactanos">
+    <header>
+        <nav>
+            <img class="logo" src="../Imagenes/Logo fondo verde neon.JPG" alt="Logo BeepSafe">
+            <a href="../index.html">INICIO</a>
+            <a href="../pages/servicio.html">SERVICIO</a>
+            <a href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a>
+            <a href="../pages/beneficios.html">BENEFICIOS</a>
+            <a class="grisado" href="../pages/contactanos.html">CONTACTANOS</a>
+            <a href="../pages/donaciones.html">DONACIONES</a>
+            <a class="iniciarsesion" href="../pages/iniciarsesion.html">INICIAR SESIÓN</a>
+        </nav>    
+    </header>
+
+    <main class="textocontactanos">
+        <h1>CONTACTANOS!</h1>
+        <form class="formcontactanos"action="form.php" method="POST">
+            <input type="text" name="Nombre" id="nombre" placeholder="Nombre"><br>
+            <input type="text" name="mail" id="mail" placeholder="Correo electrónico"><br>
+            <textarea name="mensaje" id="" cols="60" rows="4" placeholder="Tu mensaje"></textarea><br>
+            <input class="boton" type="submit" value="Enviar mensaje">
+        </form>
+    </main>    
+</body>
+</html>
