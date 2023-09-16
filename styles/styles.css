@@ -75,8 +75,8 @@
 
     /* Define el tamaño del logo en el header */
     .logo{
-        max-width: 121px;
-        max-height: 121px;
+        max-width: 70px;
+        max-height: 70px;
     }
 
 
@@ -90,7 +90,7 @@
         padding: 0px;
     }
     .nav-item{
-        margin: 36px 63px;
+        margin: 0;
     }
 
     /* Define la posición de la hamburguesa*/
