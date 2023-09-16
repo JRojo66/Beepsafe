@@ -7,7 +7,7 @@
     body{
         background-image: url(../Imagenes/escalador.png);
         background-repeat: no-repeat;
-        background-size: 80%; /*PREGUNTAR*/
+        background-size: 100%;
     }
     .logo{
         max-width: 50px;
@@ -28,7 +28,7 @@
     /* Define la posición de la hamburguesa*/
     .navbar-toggler {
         position: absolute;
-        right: 100px;
+        right: 0;
         top: 0;
     }
 
@@ -59,14 +59,100 @@
         justify-content: center;
         gap: 10px;
         position: absolute;
-        left:300px;
+        left: 400px; /* PREGUNTAR porque no funciona right: 0;*/
     }
 }
 
 /* Tablet */
-/*@media only screen and (min-width: 500px) and (max-width:960px){/*
+@media only screen and (min-width: 500px) and (max-width:960px){
     /* Define el alto de la sección media */
-/*}*/
+    body{
+        background-image: url(../Imagenes/tablasnavegando.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    /* Define el tamaño del logo en el header */
+    .logo{
+        max-width: 121px;
+        max-height: 121px;
+    }
+
+
+    /* Define el color del fondo del header */
+    .fondo_header{
+        background-color: #5DFDCB;
+    }
+
+    /* Rellenan el color de fondo del header - PREGUNTAR*/
+    .navbar{
+        padding: 0px;
+    }
+    .nav-item{
+        margin: 36px 63px;
+    }
+
+    /* Define la posición de la hamburguesa*/
+    .navbar-toggler {
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+    
+    /* Define el formato de los botones del navegador*/
+    .nav-link{
+        font-family: Jura;
+        font-weight: bold;
+        font-size: auto;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Define el formato del botón Iniciar Sesion*/
+    .nav-link__iniciar_sesion{
+        font-family: Jura;
+        color: #5DFDCB;
+        background-color: black;
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 31px;
+        padding: 11px 18px 15px 18px;
+        border-radius: 12%;
+    }
+
+        .texto{
+        height: 702px;
+    }
+        /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
+        .p_texto{
+            color: black;
+            font-size: 20px;
+            font-family: Jura;
+            font-weight: bold;
+            width: 600px;
+            text-align: justify;
+            margin-top: 400px;
+            margin-left: 50px;
+        }
+
+    .col{
+        height: 100px;
+    }
+
+    /* Define el tamaño de los iconos de redes y el alto del footer */
+    .redes .col a img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .redes__layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
 
 /*Desktop*/
 @media only screen and (min-width:501px){
