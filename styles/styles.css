@@ -44,7 +44,7 @@
         font-family: Jura;
         width: 200px;
         text-align: justify;
-        margin-top: 225px;;
+        margin-top: 60%;;
         margin-left: 50px;
     }
 
@@ -59,12 +59,13 @@
         justify-content: center;
         gap: 10px;
         position: absolute;
-        left: 400px; /* PREGUNTAR porque no funciona right: 0;*/
+        bottom: 0%;
+        left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
     }
 }
 
-/* Tablet */
-@media only screen and (min-width: 500px) and (max-width:960px){
+/* Mobile horizontal */
+@media only screen and (min-width: 500px) and (max-width:1100px){
     /* Define el alto de la sección media */
     body{
         background-image: url(../Imagenes/tablasnavegando.png);
@@ -121,7 +122,7 @@
     }
 
         .texto{
-        height: 702px;
+        height: 500px;
     }
         /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
         .p_texto{
@@ -129,15 +130,11 @@
             font-size: 20px;
             font-family: Jura;
             font-weight: bold;
-            width: 600px;
+            width: 450px;
             text-align: justify;
-            margin-top: 400px;
+            margin-top: 250px;
             margin-left: 50px;
         }
-
-    .col{
-        height: 100px;
-    }
 
     /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
@@ -155,7 +152,7 @@
 }
 
 /*Desktop*/
-@media only screen and (min-width:501px){
+@media only screen and (min-width:1101px){
         /* Define el alto de la sección media */
 
 
@@ -222,10 +219,6 @@
             margin-top: 400px;;
             margin-left: 50px;
         }
-
-    .col{
-        height: 100px;
-    }
 
     /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
