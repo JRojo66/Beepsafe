@@ -1,14 +1,25 @@
-/* Regla de la media query*/
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.p_texto{
+    font-family: Jura;
+    width: 200px;
+    text-align: justify;
+}
+
 
 /*Mobile*/
 @media only screen and (max-width: 500px){
 
     /*Define la imagen de fondo y el tamaño - Establece que no se repita*/
-    body{
+    .inicio_backgroundImage{
         background-image: url(../Imagenes/escalador.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
+    .servicio_backgroundImage{
+        background-image: url(../Imagenes/Esquiadorenlamontanacelvertical.png);
+    }
+
     .logo{
         max-width: 50px;
         max-height: 50px;
@@ -38,12 +49,14 @@
     }
 
     /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
-    .p_texto{
+    .p_texto_inicio{
         color: white;
-        font-size: 12px;
-        font-family: Jura;
-        width: 200px;
-        text-align: justify;
+        margin-top: 60%;;
+        margin-left: 50px;
+    }
+
+    .p_texto_servicio{
+        color: black;
         margin-top: 60%;;
         margin-left: 50px;
     }
@@ -67,10 +80,11 @@
 /* Mobile horizontal */
 @media only screen and (min-width: 500px) and (max-width:1100px){
     /* Define el alto de la sección media */
-    body{
+    .inicio_backgroundImage{
         background-image: url(../Imagenes/tablasnavegando.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
+    }
+    .servicio_backgroundImage{
+        background-image: url(../Imagenes/Esquiadorenlamontana.png);
     }
 
     /* Define el tamaño del logo en el header */
@@ -125,7 +139,17 @@
         height: 500px;
     }
         /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
-        .p_texto{
+        .p_texto_inicio{
+            color: black;
+            font-size: 20px;
+            font-family: Jura;
+            font-weight: bold;
+            width: 450px;
+            text-align: justify;
+            margin-top: 250px;
+            margin-left: 50px;
+        }
+        .p_texto_servicio{
             color: black;
             font-size: 20px;
             font-family: Jura;
@@ -153,15 +177,13 @@
 
 /*Desktop*/
 @media only screen and (min-width:1101px){
-        /* Define el alto de la sección media */
-
-
 
     /*Define la imagen de fondo y el tamaño - Establece que no se repita*/
-    body{
+    .inicio_backgroundImage{
         background-image: url(../Imagenes/tablasnavegando.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
+    }
+    .servicio_backgroundImage{
+        background-image: url(../Imagenes/Esquiadorenlamontana.png);
     }
 
     /* Define el tamaño del logo en el header */
@@ -209,7 +231,7 @@
         height: 702px;
     }
         /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
-        .p_texto{
+        .p_texto_inicio{
             color: black;
             font-size: 20px;
             font-family: Jura;
@@ -219,6 +241,17 @@
             margin-top: 400px;;
             margin-left: 50px;
         }
+        .p_texto_servicio{
+            color: black;
+            font-size: 20px;
+            font-family: Jura;
+            font-weight: bold;
+            width: 600px;
+            text-align: justify;
+            margin-top: 400px;;
+            margin-left: 50px;
+        }
+
 
     /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
