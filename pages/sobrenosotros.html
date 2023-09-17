@@ -3,47 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Definicion de archivos de styles-->
-    <link rel="stylesheet" href="../styles/styles.css"/>
-    <!-- Definicion de fonts-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Open+Sans:wght@300&family=Paytone+One&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/styles.css">
     <!-- Título de la página-->
-    <title>Sobre Nosotros</title>
+    <title>SobreNosotros</title>
 </head>
+<body class="sobrenosotros_backgroundImage">
+    <div>
+        <!-- Estructura grid bootstrap -->
+        <div class="row fondo_header">
+            <div class="col-1">
+                <!-- Logo -->
+                <img class="logo" src="../Imagenes/Logo fondo verde neon.JPG" alt="Logo Beepsafe">
+            </div>
+            <div class="col-11 align_nav">
+                <!-- Navegador -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                    <div class="container-fluid fondo_header">
+                        <!-- Hamburguesa -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Items del navegador -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/servicio.html">SERVICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="../pages/sobrenosotros.html" aria-disabled="true">SOBRE NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/beneficios.html">BENEFICIOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contactanos.html">CONTACTANOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/donaciones.html">DONACIONES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link__iniciar_sesion" href="../pages/iniciarsesion.html">INICIAR SESION</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-<body class="fondosobrenosotros">
-    <header>
-        <nav>
-            <img class="logo" src="../Imagenes/Logo fondo verde neon.JPG" alt="Logo BeepSafe">
-            <a href="../index.html">INICIO</a>
-            <a href="../pages/servicio.html">SERVICIO</a>
-            <a class="grisado" href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-            <a href="../pages/beneficios.html">BENEFICIOS</a>
-            <a href="../pages/contactanos.html">CONTACTANOS</a>
-            <a href="../pages/donaciones.html">DONACIONES</a>
-            <a class="iniciarsesion" href="../pages/iniciarsesion.html">INICIAR SESIÓN</a>
-        </nav>    
-    </header>
+        <!-- Seccion media -->
+        <div class="row texto">
+            <div class="col">
+                <p class="p_texto p_texto_sobrenosotros">Nos gustan los deportes extremos y hacerlos con amigos. 
+                    <br><br>Creamos una app que nos facilita cuidarnos entre nosotros.</p>
+            </div>
+        </div>
 
-    <main Class="textosobrenosotros">
-        <h1>SOBRE</h1>
-        <h1>NOSOTROS</h1>
-        <p class="parrafosobrenosotros">Nos gustan los deportes extremos y hacerlos con amigos. 
-            <br><br>Creamos una app que nos facilita cuidarnos entre nosotros.
-        </p>
-    </main>
-
-    <footer class="footersobrenosotros">
-        <a href="https://www.facebook.com/" target="_blank"><img src="../Imagenes/facebook.png" alt="facebook"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../Imagenes/Instagram.jpeg" alt="Instagram"></a>
-        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="../Imagenes/Whatsapp.jpeg" alt="Whatsapp"></a>
-        <a href="https://twitter.com/?lang=es" target="_blank"><img src="../Imagenes/Twitter.png" alt="Twitter"></a>
-    </footer>
-    
+        <!-- Footer -->
+        <div class="row redes">
+            <div class="col redes__layout">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../Imagenes/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../Imagenes/Instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="../Imagenes/Whatsapp.jpeg" alt="Whatsapp"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../Imagenes/x.jpeg" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
