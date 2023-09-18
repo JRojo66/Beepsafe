@@ -24,6 +24,9 @@ body{
     .beneficios_backgroundImage{
         background-image: url(../Imagenes/hickerenmontanacelvertical.png);
     }
+    .contactanos_backgroundImage{
+        background-image: url(../Imagenes/rapelconmontanacelvertical.png);
+    }
 
     .logo{
         max-width: 50px;
@@ -74,6 +77,54 @@ body{
         margin-top: 25%;;
     }
 
+    .textocontactanos{
+        font-family: Paytone One;
+        color: #5DFDCB;
+        font-size: 52px;
+        margin-top: 5%;
+        margin-left: 0;
+        margin-bottom:0;
+        text-align: center;
+    }
+        /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
+        .formcontactanos{
+            background-color: white;
+            border-radius: 24px;
+            border: none;
+            width: 90%;
+            height: 500px;
+            margin-left: 3%;
+        }
+        /* Define el formato del texto del formulario de contactenos*/
+        form input{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border: none;
+            margin: 30px;
+        }
+        /* Define el formato del area del mensaje del formulario de contactenos*/
+        form textarea{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border: none; 
+            margin: 30px;
+            width: 72%;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión*/
+        .boton{
+            background-color: #5DFDCB;
+            border-radius: 15px;
+            text-decoration: bold;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión cuando pasa el cursor por encima*/
+        .boton:hover{
+            background-color: grey;
+        }
+        
+
     /* Define el tamaño y la disposición  de los iconos de las redes*/
 
     .redes .col a img{
@@ -117,7 +168,9 @@ body{
     .beneficios_backgroundImage{
         background-image: url(../Imagenes/hickerenmontanacelhorizontal.png);
     }
-
+    .contactanos_backgroundImage{
+        background-image: url(../Imagenes/rapelconmontana.png);
+    }
     /* Define el tamaño del logo en el header */
     .logo{
         max-width: 70px;
@@ -196,7 +249,57 @@ body{
             width: 45%;
             margin-top: 0%;
         }
-
+        .textocontactanos{
+            font-family: Paytone One;
+            color: #5DFDCB;
+            font-size: 64px;
+            margin-top: 0;
+            margin-left: 5%;
+            margin-bottom:0;
+            
+            text-align: left;
+        }
+        /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
+        .formcontactanos{
+            background-color: white;
+            border-radius: 24px;
+            border: none;
+            width: 40%;
+            height: 50%;
+            margin-left: 103px;
+        }
+        /* Define el formato del texto del formulario de contactenos*/
+        form input{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            width: 80%;
+            border: none;
+            margin-top: 6%;
+        }
+        /* Define el formato del area del mensaje del formulario de contactenos*/
+        form textarea{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            width: 80%;
+            border: none; 
+            margin: 5% 0 18% 0;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión*/
+        .boton{
+            background-color: #5DFDCB;
+            border-radius: 15px;
+            text-decoration: bold;
+            margin-top:0;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión cuando pasa el cursor por encima*/
+        .boton:hover{
+            background-color: grey;
+        }
+                
     /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
         width: 40px;
@@ -219,7 +322,7 @@ body{
         justify-content: center;
         gap: 10px;
         position: absolute;
-        bottom: 0%;
+        bottom: 0%; /* PREGUNTAR porque no funciona en el cel*/
         left: 0; /* PREGUNTAR porque no funciona right: 0;*/
     }
 
@@ -242,7 +345,9 @@ body{
     .beneficios_backgroundImage{
         background-image: url(../Imagenes/hickerenmontana.png);
     }
-
+    .contactanos_backgroundImage{
+        background-image: url(../Imagenes/rapelconmontana.png);
+    }
     /* Define el tamaño del logo en el header */
     .logo{
         max-width: 121px;
@@ -323,6 +428,52 @@ body{
             width: 30%;
             margin-top: 5%;
             margin-left: 5%;
+        }
+        /* Ajusta el formato de texto del titulo principal de la página contactanos*/
+        .textocontactanos{
+        font-family: Paytone One;
+        color: #5DFDCB;
+        font-size: 64px;
+        margin-top: 111px;
+        margin-left: 130px;
+        margin-bottom:40px;
+        text-align: left;
+        }
+        /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
+        .formcontactanos{
+            background-color: white;
+            border-radius: 24px;
+            border: none;
+            width: 717px;
+            height: 500px;
+            margin-left: 103px;
+        }
+        /* Define el formato del texto del formulario de contactenos*/
+        form input{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border: none;
+            margin: 30px;
+        }
+        /* Define el formato del area del mensaje del formulario de contactenos*/
+        form textarea{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border: none; 
+            margin: 30px;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión*/
+        .boton{
+            background-color: #5DFDCB;
+            border-radius: 15px;
+            text-decoration: bold;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión cuando pasa el cursor por encima*/
+        .boton:hover{
+            background-color: grey;
         }
 
     /* Define el tamaño de los iconos de redes y el alto del footer */
