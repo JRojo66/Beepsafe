@@ -22,7 +22,7 @@ body{
         background-image: url(../Imagenes/kiterenmarcelvertical.png);
     }
     .beneficios_backgroundImage{
-        background-image: url(../Imagenes/hickerenmontanacelvertical1.png);
+        background-image: url(../Imagenes/hickerenmontanacelvertical.png);
     }
 
     .logo{
@@ -219,7 +219,7 @@ body{
         justify-content: center;
         gap: 10px;
         position: absolute;
-        bottom: 36%;
+        bottom: 0%;
         left: 0; /* PREGUNTAR porque no funciona right: 0;*/
     }
 
