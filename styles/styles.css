@@ -104,7 +104,7 @@ body{
         font-weight: bold;
         width: 300px;
         height: 510px;
-        margin-left: 36px;
+        margin-left: 32px;
         margin-top: 24%;
     }
         /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
@@ -193,6 +193,7 @@ body{
     .redes .col a img{
         width: 25px;
         height: 25px;
+        margin: 0 10px;
     }
     /* Define posición de los iconos de las redes*/
     .redes__layout{
@@ -240,6 +241,13 @@ body{
     .graciasyredesdonaciones h1{
         font-size: 20%;
     }
+    /* Centra el texto de Gracias por Ayudar*/ 
+    .graciasyredesdonaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
     /* Define el tamaño del logo del footer de las donaciones*/
     .logofooterdonaciones{
@@ -465,6 +473,7 @@ body{
     .redes .col a img{
         width: 25px;
         height: 25px;
+        margin: 0 40px;
     }
     .redesdonaciones .col a img{
         margin-bottom: 3%;
@@ -741,10 +750,11 @@ body{
 
 
 
-    /* Define el tamaño de los iconos de redes y el alto del footer */
+    /* Define el tamaño de los iconos de redes, la separación y el alto del footer */
     .redes .col a img{
         width: 40px;
         height: 40px;
+        margin: 0 40px;
     }
     .redesdonaciones .col a img{
         margin-bottom: 3%;
@@ -769,6 +779,7 @@ body{
     .redes_layout_donaciones{
         background-color: #5DFDCB;
         margin-bottom: 2%;
+        text-align: center;
     }
 
     /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
