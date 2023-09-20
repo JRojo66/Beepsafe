@@ -32,7 +32,7 @@ body{
     }
     .donaciones_backgroundImage{
         background-image: url(../Imagenes/bordelagocelvertical.jpg);
-
+    }
     .logo{
         max-width: 50px;
         max-height: 50px;
@@ -58,7 +58,7 @@ body{
 
     /* Define el alto de la sección media */
     .texto{
-        height: 450px;
+        height: 440px;
     }
 
     /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
@@ -66,7 +66,7 @@ body{
         width: 200px;
         margin-left: 50px;
     }
-    
+
     .p_texto_inicio{
         color: black;
         font-weight: bolder;
@@ -97,6 +97,16 @@ body{
         margin-bottom:0;
         text-align: center;
     }
+    .p_texto_donaciones{
+        font-family: Jura;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        width: 300px;
+        height: 510px;
+        margin-left: 36px;
+        margin-top: 24%;
+    }
         /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
         .formcontactanos{
             background-color: white;
@@ -119,7 +129,7 @@ body{
         form textarea{
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
-            border: none; 
+            border: none;
             margin: 30px;
             width: 72%;
         }
@@ -159,7 +169,6 @@ body{
             height: 320px;
             margin-left: 2%;
             margin-top:10%;
-
         }
         /* Define el formato del boton de registrarse para los que no tienen cuenta*/
         .notenescuenta{
@@ -174,25 +183,27 @@ body{
             text-align: center;
             padding: 10px;
         }
-
-
-    /* Define el tamaño y la disposición  de los iconos de las redes*/
-
+    /* Define el tamaño de los iconos de redes y el alto del footer de la página donaciones*/
+    .redesdonaciones{
+        text-align: center;
+        margin-bottom: 40px;
+        height: 40px;
+    }
+    /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
         width: 25px;
         height: 25px;
     }
-
+    /* Define posición de los iconos de las redes*/
     .redes__layout{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         gap: 10px;
         position: absolute;
         bottom: 0%;
-        left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
+        left: 0; /* PREGUNTAR porque no funciona right: 0;*/
     }
-
     .redes__layout__beneficios{
         display: flex;
         flex-direction: column;
@@ -202,16 +213,23 @@ body{
         bottom: 0%;
         left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
     }
-
+    .redes__layout__donaciones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        bottom: 3%;
+        left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
+        background-color: #5DFDCB;
     }
+
     /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .graciasyredesdonaciones{
     font-family: Paytone One;
     font-size: 80px;
     background-color: #5DFDCB;
-    height: 250px;
+    height: 80px;
     display:flex;
-    flex-direction: column;
     justify-content: space-evenly;
     margin:0px;
     padding: 0px;
@@ -220,13 +238,13 @@ body{
 
     /*Define el tamaño del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .graciasyredesdonaciones h1{
-        font-size: 80px;
+        font-size: 20%;
     }
 
     /* Define el tamaño del logo del footer de las donaciones*/
     .logofooterdonaciones{
-        width:25px;
-        height:25px;
+        width:80px;
+        height:80px;
     }
         /* Define el color de fondo del footer - PREGUNTAR*/
     .colorfooterdonaciones, .redesdonaciones{
@@ -279,7 +297,7 @@ body{
         position: absolute;
         right: 0px;
         top: 0;
-    }    
+    }
     /* Define el formato de los botones del navegador*/
     .nav-link{
         font-family: Jura;
@@ -319,7 +337,7 @@ body{
             font-family: Jura;
             text-align: justify;
             margin-left: 50px;
-        }        
+        }
         .p_texto_inicio, .p_texto_servicio{
             color: black;
             font-weight: bold;
@@ -382,7 +400,7 @@ body{
         font-family: 'Poppins', sans-serif;
         font-size: 12px;
         width: 80%;
-        border: none; 
+        border: none;
         margin: 5% 0 25% 3%;
     }
     /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión*/
@@ -442,11 +460,14 @@ body{
     .redesdonaciones .col a img{
         width: 40px;
         height: 40px;
-    }                
+    }
     /* Define el tamaño de los iconos de redes y el alto del footer */
     .redes .col a img{
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
+    }
+    .redesdonaciones .col a img{
+        margin-bottom: 3%;
     }
 
     .redes__layout{
@@ -455,10 +476,7 @@ body{
         justify-content: center;
         gap: 30px;
     }
-    .redes .col a img{
-        width: 25px;
-        height: 25px;
-    }
+
     .redes__layout__beneficios{
         display: flex;
         flex-direction: row;
@@ -470,10 +488,10 @@ body{
     }
         /*Define el fondo de las redes en la página de donaciones*/
         .redes_layout_donaciones{
-            background-color: #5DFDCB;  
-            margin-bottom: 2%;  
+            background-color: #5DFDCB;
+            margin-bottom: 2%;
         }
-    
+
         /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
         .graciasyredesdonaciones{
         font-family: Paytone One;
@@ -487,12 +505,12 @@ body{
         padding: 0px;
         text-align: center;
         }
-    
+
         /*Define el tamaño del texto de agradecimiento y las redes en el footer de la pagina donaciones */
         .graciasyredesdonaciones h1{
             font-size: 80px;
         }
-    
+
         /* Define el tamaño del logo del footer de las donaciones*/
         .logofooterdonaciones{
             width:296px;
@@ -586,13 +604,13 @@ body{
     height: 702px;
     }
         /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
-        
+
         .p_texto{
             font-size: 20px;
             font-family: Jura;
             text-align: justify;
         }
-        
+
         .p_texto_inicio{
             color: black;
             font-weight: bold;
@@ -609,12 +627,12 @@ body{
             margin-left: 50px;
         }
 
-        .p_texto_sobrenosotros{            
+        .p_texto_sobrenosotros{
             color: black;
             font-weight: bold;
             width: 20%;
             margin-top: 24%;
-            margin-left: 50px;            
+            margin-left: 50px;
         }
 
         .p_texto_beneficios{
@@ -669,7 +687,7 @@ body{
     form textarea{
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
-        border: none; 
+        border: none;
         margin: 30px;
     }
     /* Define el formato del boton de enviar de los formularios de las paginas contactanos e iniciar sesión*/
@@ -720,13 +738,16 @@ body{
         text-align: center;
         padding: 10px;
     }
-        
-                        
+
+
 
     /* Define el tamaño de los iconos de redes y el alto del footer */
-    .redesdonaciones .col a img{
+    .redes .col a img{
         width: 40px;
         height: 40px;
+    }
+    .redesdonaciones .col a img{
+        margin-bottom: 3%;
     }
 
     .redes__layout{
@@ -746,16 +767,14 @@ body{
     }
     /*Define el fondo de las redes en la página de donaciones*/
     .redes_layout_donaciones{
-        background-color: #5DFDCB;  
-        margin-bottom: 2%;  
+        background-color: #5DFDCB;
+        margin-bottom: 2%;
     }
 
     /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .graciasyredesdonaciones{
     font-family: Paytone One;
-    font-size: 80px;
     background-color: #5DFDCB;
-    height: 250px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
