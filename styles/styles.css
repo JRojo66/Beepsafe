@@ -213,7 +213,7 @@ body{
         gap: 10px;
         position: absolute;
         bottom: 0%;
-        left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
+        left: 85%; /* PREGUNTAR porque no funciona right: 0;*/
     }
     .redes_layout_donaciones{
         display: flex;
@@ -488,15 +488,6 @@ body{
         justify-content: center;
         gap: 30px;
     }
-    .redes_layout_beneficios{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        position: absolute;
-        bottom: 0%; /* PREGUNTAR porque no funciona en el cel*/
-        left: 0; /* PREGUNTAR porque no funciona right: 0;*/
-    }
         /*Define el fondo de las redes en la página de donaciones*/
         .redes_layout_donaciones{
             background-color: #5DFDCB;
@@ -747,14 +738,14 @@ body{
         justify-content: center;
         gap: 30px;
     }
-    .redes_layout_vertical{
+    .redes_layout_beneficios{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
         position: absolute;
         bottom: 5%;
-        left: 95%; /* PREGUNTAR porque no funciona right: 0;*/
+        left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
     }
     /*Define el fondo de las redes en la página de donaciones*/
     .redes_layout_donaciones{
