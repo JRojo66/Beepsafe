@@ -46,16 +46,27 @@ body{
     /* Quita el padding blanco del navegador*/
     .navbar{
         padding: 0px;
-    }
-    /* Separa los items del navegador*/
-    .nav-item{
-        margin: 36px 63px;
-    }
-    /* Define la posición de la hamburguesa*/
+    }   
+    /* Define la posicón y el color de fondo de la hamburguesa*/
     .navbar-toggler {
         position: absolute;
-        right: 0;
+        right: 0px;
         top: 0;
+        background-color: #5DFDCB;
+    }
+    /* Define la disposición y posición de los elementos del menú*/
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        background-color: #5DFDCB;
+    }
+
+/* Define el color de fondo del header - Elimina el gap blanco entre el logo y el menú de navegación*/
+    .headercolor{
+        background-color: #5DFDCB;
     }
     /* Define el alto de la sección media */
     .texto{
@@ -213,7 +224,6 @@ body{
         left: 90%; /* PREGUNTAR porque no funciona right: 0;*/
         background-color: #5DFDCB;
     }
-
     /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .gracias_redesdonaciones{
     font-family: Paytone One;
@@ -222,7 +232,6 @@ body{
     height: 80px;
     margin:0px;
     padding: 0px;
-
     }
     /* Centra el texto de Gracias por Ayudar*/ 
     .gracias_redesdonaciones{
@@ -285,11 +294,12 @@ body{
     .nav-item{
         margin: 0;
     }
-    /* Define la posición de la hamburguesa*/
+    /* Define la posicón y el color de fondo de la hamburguesa*/
     .navbar-toggler {
         position: absolute;
         right: 0px;
         top: 0;
+        background-color: #5DFDCB;
     }
     /* Define el formato de los botones del navegador*/
     .nav-link{
@@ -299,6 +309,27 @@ body{
         color: black;
         text-decoration: none;
     }
+    
+/* Define la posición de la hamburguesa*/
+.navbar-toggler {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: #5DFDCB;
+}
+/* Define la disposición de los elementos del menú de navegación*/
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #5DFDCB;
+}
+.headercolor{
+    background-color: #5DFDCB;
+}
+
     /* Define el formato del botón Iniciar Sesion*/
     .nav-link__iniciar_sesion{
         font-family: Jura;
@@ -416,7 +447,6 @@ body{
     .boton_iniciarsesion:hover{
         background-color: grey;
     }
-
     /* Define el formato, tamaño y posición del cuadro del formulario de la pagina iniciar sesión*/
     .forminiciarsesion{
         background-color: white;
@@ -458,7 +488,6 @@ body{
         justify-content: center;
         gap: 30px;
     }
-
     .redes_layout_beneficios{
         display: flex;
         flex-direction: row;
@@ -490,7 +519,6 @@ body{
         .gracias_redesdonaciones h1{
             font-size: 60px;
         }
-
         /* Define el tamaño del logo del footer de las donaciones*/
         .logofooterdonaciones{
             width:296px;
@@ -500,8 +528,6 @@ body{
         .colorfooterdonaciones, .redesdonaciones{
             background-color: #5DFDCB;
         }
-
-
 }
 
 /*Desktop*/
@@ -534,21 +560,29 @@ body{
         max-width: 121px;
         max-height: 121px;
     }
-
-
     /* Define el color del fondo del header */
     .fondo_header{
         background-color: #5DFDCB;
     }
-
     /* Rellenan el color de fondo del header - PREGUNTAR*/
     .navbar{
         padding: 0px;
     }
     .nav-item{
-        margin: 36px 63px;
+        margin: 36px /*63px; */
     }
-
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        background-color: #5DFDCB;
+    }
+    /* Define el color de fondo del header - Elimina el gap entre el logo y el menú del navegador *//* Elimina el espacio en blanco entre el logo y el menú*/
+    .headercolor{
+        background-color: #5DFDCB;
+    }
     /* Define el formato de los botones del navegador*/
     .nav-link{
         font-family: Jura;
@@ -557,7 +591,6 @@ body{
         color: black;
         text-decoration: none;
     }
-
     /* Define el formato del botón Iniciar Sesion*/
     .nav-link__iniciar_sesion{
         font-family: Jura;
@@ -579,23 +612,19 @@ body{
         padding: 11px 18px 15px 18px;
         border-radius: 12%;
     }
-
     .texto{
     height: 702px;
     }
         /* Define el tipo, color, tamaño, alineamiento y posición del texto*/
-
         .p_texto{
             font-size: 20px;
             font-family: Jura;
             text-align: justify;
         }
-
         .p_texto_inicio{
             color: black;
             font-weight: bold;
             width: 600px;
-
             margin-top: 400px;;
             margin-left: 50px;
         }
@@ -606,7 +635,6 @@ body{
             margin-top: 400px;;
             margin-left: 50px;
         }
-
         .p_texto_sobrenosotros{
             color: black;
             font-weight: bold;
@@ -614,7 +642,6 @@ body{
             margin-top: 24%;
             margin-left: 50px;
         }
-
         .p_texto_beneficios1, .p_texto_beneficios2{
             color: white;
             width: 30%;
@@ -631,9 +658,6 @@ body{
             height: 300px;
             margin-left: 96px;
             margin-top: 18%;
-        }
-        /* Define el alto del texto de la página donaciones*/
-        .p_texto_donaciones{
             height: 1000px;
         }
     /* Define el formato, tamaño y posición del formulario de la pagina contactanos*/
@@ -693,7 +717,7 @@ body{
         width: 717px;
         height: 320px;
         margin-left: 31.5%;
-        margin-top: 11%;
+        margin-top: 20%;
     }
     /* Define el formato del boton de registrarse para los que no tienen cuenta*/
     .notenescuenta{
@@ -708,9 +732,6 @@ body{
         text-align: center;
         padding: 10px;
     }
-
-
-
     /* Define el tamaño de los iconos de redes, la separación y el alto del footer */
     .redes .col a img{
         width: 40px;
@@ -720,7 +741,6 @@ body{
     .redes_donaciones .col a img{
         margin-bottom: 3%;
     }
-
     .redes_layout{
         display: flex;
         flex-direction: row;
@@ -742,7 +762,6 @@ body{
         margin-bottom: 2%;
         text-align: center;
     }
-
     /*Define la distribucion, el color de fondo, el tipo de letra y la distribucion del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .gracias_redesdonaciones{
     font-family: Paytone One;
@@ -754,12 +773,10 @@ body{
     padding: 0px;
     text-align: center;
     }
-
     /*Define el tamaño del texto de agradecimiento y las redes en el footer de la pagina donaciones */
     .gracias_redesdonaciones h1{
         font-size: 80px;
     }
-
     /* Define el tamaño del logo del footer de las donaciones*/
     .logofooterdonaciones{
         width:296px;
@@ -769,7 +786,6 @@ body{
     .colorfooterdonaciones, .redesdonaciones{
         background-color: #5DFDCB;
     }
-
 }
 
 
